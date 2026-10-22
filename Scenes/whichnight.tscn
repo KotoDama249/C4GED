@@ -1,0 +1,88 @@
+[gd_scene format=3 uid="uid://6x7sjg8g1wd3"]
+
+[ext_resource type="SpriteFrames" uid="uid://j8brqjfpu0ei" path="res://Which Night/Animations/loading.tres" id="1_1c0ig"]
+[ext_resource type="Script" uid="uid://bcfdk4tiftoug" path="res://Which Night/Scripts/nightscreen.gd" id="1_n5y7u"]
+[ext_resource type="SpriteFrames" uid="uid://ba54sulvquxru" path="res://Which Night/Animations/blip.tres" id="2_n5y7u"]
+[ext_resource type="Texture2D" uid="uid://6kx6yqv41jva" path="res://Which Night/Images/Time Text.png" id="4_j0ukk"]
+[ext_resource type="Texture2D" uid="uid://l61sk5wgby8v" path="res://Which Night/Images/One.png" id="5_dn5i7"]
+[ext_resource type="Texture2D" uid="uid://blljxe540dpvt" path="res://Which Night/Images/Two.png" id="6_26oqu"]
+[ext_resource type="Texture2D" uid="uid://ciyxk5pdmg8rq" path="res://Which Night/Images/Three.png" id="7_345xm"]
+[ext_resource type="Texture2D" uid="uid://htx2xooatipk" path="res://Which Night/Images/Four.png" id="8_rtbop"]
+[ext_resource type="Texture2D" uid="uid://cnxsin1ggwosd" path="res://Which Night/Images/Five.png" id="9_eqyqs"]
+[ext_resource type="Texture2D" uid="uid://dvjgvhvt0r1qk" path="res://Which Night/Images/Six.png" id="10_1jabi"]
+[ext_resource type="Texture2D" uid="uid://dsmrcgfd4xwo6" path="res://Which Night/Images/Seven.png" id="11_dj26u"]
+[ext_resource type="Texture2D" uid="uid://b6qhn10u7pv6" path="res://Which Night/Images/Eight.png" id="12_etp8q"]
+
+[node name="Node2D" type="Node2D" unique_id=1968135911]
+script = ExtResource("1_n5y7u")
+
+[node name="Background" type="AnimatedSprite2D" parent="." unique_id=1784358640]
+sprite_frames = ExtResource("1_1c0ig")
+autoplay = "default"
+frame_progress = 0.98790073
+centered = false
+
+[node name="Blip" type="AnimatedSprite2D" parent="." unique_id=766041304]
+sprite_frames = ExtResource("2_n5y7u")
+autoplay = "default"
+frame = 11
+frame_progress = 1.0
+centered = false
+
+[node name="Timer" type="Timer" parent="." unique_id=1561564976]
+wait_time = 5.0
+autostart = true
+
+[node name="Time Text" type="Sprite2D" parent="." unique_id=843713732]
+texture_filter = 1
+position = Vector2(960, 500)
+texture = ExtResource("4_j0ukk")
+
+[node name="Night Text" type="Node" parent="." unique_id=137943703]
+
+[node name="One" type="Sprite2D" parent="Night Text" unique_id=1225131875]
+texture_filter = 1
+position = Vector2(960, 540)
+texture = ExtResource("5_dn5i7")
+
+[node name="Two" type="Sprite2D" parent="Night Text" unique_id=2078379382]
+visible = false
+texture_filter = 1
+position = Vector2(960, 540)
+texture = ExtResource("6_26oqu")
+
+[node name="Three" type="Sprite2D" parent="Night Text" unique_id=1165600304]
+visible = false
+texture_filter = 1
+position = Vector2(960, 540)
+texture = ExtResource("7_345xm")
+
+[node name="Four" type="Sprite2D" parent="Night Text" unique_id=1442016560]
+visible = false
+texture_filter = 1
+position = Vector2(960, 540)
+texture = ExtResource("8_rtbop")
+
+[node name="Five" type="Sprite2D" parent="Night Text" unique_id=509522540]
+visible = false
+texture_filter = 1
+position = Vector2(960, 540)
+texture = ExtResource("9_eqyqs")
+
+[node name="Six" type="Sprite2D" parent="Night Text" unique_id=698292499]
+visible = false
+texture_filter = 1
+position = Vector2(960, 540)
+texture = ExtResource("10_1jabi")
+
+[node name="Seven" type="Sprite2D" parent="Night Text" unique_id=1882217985]
+visible = false
+texture_filter = 1
+position = Vector2(960, 540)
+texture = ExtResource("11_dj26u")
+
+[node name="Eight" type="Sprite2D" parent="Night Text" unique_id=1580719132]
+visible = false
+texture_filter = 1
+position = Vector2(960, 540)
+texture = ExtResource("12_etp8q")

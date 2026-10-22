@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://imjfskxbj6ap"]
+
+[ext_resource type="AudioStream" uid="uid://cur1ctidjew5r" path="res://Main Menu/Audio/bg_noise.wav" id="1_3jius"]
+[ext_resource type="Script" uid="uid://ctmel7fnemqb" path="res://Scripts/play_audio.gd" id="2_u2eby"]
+
+[node name="Audio" type="Node" unique_id=1348710810]
+script = ExtResource("2_u2eby")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=459537830]
+process_mode = 3
+stream = ExtResource("1_3jius")

@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://bipgkjgo71ev6"]
+
+[ext_resource type="Script" uid="uid://dphpxq7nl17ih" path="res://Scripts/characterselector.gd" id="1_jxvny"]
+[ext_resource type="Texture2D" uid="uid://d0clmm7it1jpd" path="res://Custom Night Menu/Images/Arrow (CN).png" id="1_o778d"]
+[ext_resource type="FontFile" uid="uid://b3ete1ortqtqf" path="res://Fonts/Pixel.ttf" id="2_jxvny"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hb6b0"]
+size = Vector2(56, 45.999893)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8ty1q"]
+size = Vector2(56, 46)
+
+[node name="Control" type="Control" unique_id=1987192471]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_jxvny")
+
+[node name="ValueLabel" type="Label" parent="." unique_id=1472282542]
+texture_filter = 1
+layout_mode = 0
+offset_left = 56.0
+offset_top = 4.0
+offset_right = 164.0
+offset_bottom = 50.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_jxvny")
+theme_override_font_sizes/font_size = 36
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DecreaseArrow" type="Sprite2D" parent="." unique_id=1981253918]
+texture_filter = 1
+position = Vector2(56, 46.000008)
+rotation = -3.1415925
+texture = ExtResource("1_o778d")
+centered = false
+
+[node name="Area2D" type="Area2D" parent="DecreaseArrow" unique_id=1596180655]
+position = Vector2(27.000004, 22.999996)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DecreaseArrow/Area2D" unique_id=924273252]
+position = Vector2(1, 3.0517578e-05)
+shape = SubResource("RectangleShape2D_hb6b0")
+
+[node name="IncreaseArrow" type="Sprite2D" parent="." unique_id=959781312]
+texture_filter = 1
+position = Vector2(164, 7.6293945e-06)
+texture = ExtResource("1_o778d")
+centered = false
+
+[node name="Area2D" type="Area2D" parent="IncreaseArrow" unique_id=1325206]
+position = Vector2(27, 23)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="IncreaseArrow/Area2D" unique_id=496870285]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_8ty1q")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1586157206]
+z_index = -1
+position = Vector2(110, -119)
+scale = Vector2(0.5, 0.5)
+
+[node name="HoldTimer" type="Timer" parent="." unique_id=701273188]

@@ -1,0 +1,120 @@
+[gd_scene format=3 uid="uid://b28kwqg1w03lc"]
+
+[ext_resource type="Texture2D" uid="uid://cuf3ekcs085vs" path="res://VN/Images/pillarboxes.png" id="1_dakk3"]
+[ext_resource type="Script" uid="uid://dpbwbkmxpga85" path="res://VN/Scripts/dialoguehandler.gd" id="1_g3b47"]
+[ext_resource type="Script" uid="uid://cpmpa0kmpgcjn" path="res://VN/Scripts/dialogue_scene.gd" id="1_w5oaq"]
+[ext_resource type="Texture2D" uid="uid://d1co3073x80kp" path="res://VN/Images/reference frame.png" id="2_p6crs"]
+[ext_resource type="FontFile" uid="uid://b3ete1ortqtqf" path="res://Fonts/Pixel.ttf" id="5_w5oaq"]
+
+[node name="Node2D" type="Node2D" unique_id=708635078]
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=1842360311]
+offset_right = 1920.0
+offset_bottom = 1080.0
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=990867055]
+handle_input_locally = false
+size = Vector2i(1920, 1080)
+size_2d_override = Vector2i(854, 480)
+size_2d_override_stretch = true
+render_target_update_mode = 4
+
+[node name="UNDER HERE (SCRIPT HERE)" type="Node" parent="SubViewportContainer/SubViewport" unique_id=512497715 node_paths=PackedStringArray("text", "author", "portrait_left", "portrait_center", "portrait_right", "background_slot")]
+script = ExtResource("1_g3b47")
+text = NodePath("RichTextLabel")
+author = NodePath("Label")
+portrait_left = NodePath("Placement Controls/Left")
+portrait_center = NodePath("Placement Controls/Center")
+portrait_right = NodePath("Placement Controls/Right")
+background_slot = NodePath("Placement Controls/Background")
+first_script = ExtResource("1_w5oaq")
+
+[node name="Pillarboxes" type="Sprite2D" parent="SubViewportContainer/SubViewport/UNDER HERE (SCRIPT HERE)" unique_id=1253432140]
+z_index = 128
+texture_filter = 1
+texture = ExtResource("1_dakk3")
+centered = false
+
+[node name="Frame (Temp)" type="Sprite2D" parent="SubViewportContainer/SubViewport/UNDER HERE (SCRIPT HERE)" unique_id=716410546]
+z_index = 120
+texture_filter = 1
+position = Vector2(426.66562, 240.11111)
+texture = ExtResource("2_p6crs")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="SubViewportContainer/SubViewport/UNDER HERE (SCRIPT HERE)" unique_id=1546351619]
+z_index = 121
+texture_filter = 3
+offset_left = 171.0
+offset_top = 369.0
+offset_right = 683.0
+offset_bottom = 433.0
+theme_override_fonts/normal_font = ExtResource("5_w5oaq")
+scroll_active = false
+shortcut_keys_enabled = false
+visible_characters_behavior = 1
+
+[node name="Label" type="Label" parent="SubViewportContainer/SubViewport/UNDER HERE (SCRIPT HERE)" unique_id=1038478033]
+z_index = 121
+texture_filter = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -240.187
+offset_top = -152.88889
+offset_right = 1.3348389
+offset_bottom = -128.11111
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("5_w5oaq")
+vertical_alignment = 2
+
+[node name="Placement Controls" type="Node" parent="SubViewportContainer/SubViewport/UNDER HERE (SCRIPT HERE)" unique_id=664977208]
+
+[node name="Right" type="Control" parent="SubViewportContainer/SubViewport/UNDER HERE (SCRIPT HERE)/Placement Controls" unique_id=40937820]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 0
+offset_left = 460.0
+offset_top = 60.0
+offset_right = 655.0
+offset_bottom = 356.0
+
+[node name="Left" type="Control" parent="SubViewportContainer/SubViewport/UNDER HERE (SCRIPT HERE)/Placement Controls" unique_id=2082680912]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 0
+offset_left = 200.0
+offset_top = 60.0
+offset_right = 395.0
+offset_bottom = 356.0
+
+[node name="Center" type="Control" parent="SubViewportContainer/SubViewport/UNDER HERE (SCRIPT HERE)/Placement Controls" unique_id=1161200396]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 0
+offset_left = 325.0
+offset_top = 60.0
+offset_right = 520.0
+offset_bottom = 356.0
+
+[node name="Background" type="Control" parent="SubViewportContainer/SubViewport/UNDER HERE (SCRIPT HERE)/Placement Controls" unique_id=1306080820]
+z_index = -5
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -240.1875
+offset_top = -184.0
+offset_right = 239.8125
+offset_bottom = 112.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4

@@ -1,0 +1,1017 @@
+[gd_scene format=3 uid="uid://bw3rcfwfftuc7"]
+
+[ext_resource type="Script" uid="uid://q23mobrdrdyw" path="res://Cams/Scripts/hidecams.gd" id="1_rqggm"]
+[ext_resource type="Texture2D" uid="uid://yurlppks83ch" path="res://Cams/Images/UI/Camera Outline.png" id="1_sbhhj"]
+[ext_resource type="Texture2D" uid="uid://cre74jmjuhje1" path="res://Cams/Images/UI/map_v3-noLabels.png" id="2_4cmfn"]
+[ext_resource type="Texture2D" uid="uid://5b0jo4p7bnmu" path="res://Cams/Images/UI/Cam Buttons/01_on.png" id="3_0mfw7"]
+[ext_resource type="FontFile" uid="uid://b3ete1ortqtqf" path="res://Fonts/Pixel.ttf" id="3_rbefo"]
+[ext_resource type="Texture2D" uid="uid://1m1715mwokle" path="res://Cams/Images/UI/livefeedcircle.png" id="4_bxa3e"]
+[ext_resource type="Texture2D" uid="uid://cvey8mme1h7st" path="res://Cams/Images/UI/Cam Buttons/01.png" id="4_lsrdn"]
+[ext_resource type="Texture2D" uid="uid://y0ksde323mai" path="res://Cams/Images/Background (Temp)/Elevator.png" id="5_330nl"]
+[ext_resource type="Texture2D" uid="uid://bq386aiwhqfp3" path="res://Cams/Images/UI/Cam Buttons/02_on.png" id="5_rbefo"]
+[ext_resource type="Script" uid="uid://h4h5j8pm2rw5" path="res://Cams/Scripts/cammanager.gd" id="5_rdww1"]
+[ext_resource type="Texture2D" uid="uid://c7x3r58uqg7jo" path="res://Cams/Images/UI/Cam Buttons/02.png" id="6_bxa3e"]
+[ext_resource type="Texture2D" uid="uid://doqojy5lqlpmk" path="res://Cams/Images/Background (Temp)/Theta1.png" id="6_dssf3"]
+[ext_resource type="Texture2D" uid="uid://dynt1pkmijgl5" path="res://Cams/Images/Background (Temp)/Phi1.png" id="7_8fuei"]
+[ext_resource type="Texture2D" uid="uid://rwjte3n5jmt8" path="res://Cams/Images/UI/Cam Buttons/03_on.png" id="7_g4s42"]
+[ext_resource type="Script" uid="uid://cfnq73qqmkkw5" path="res://Cams/Scripts/cams.gd" id="7_wnynw"]
+[ext_resource type="Texture2D" uid="uid://bt6614h5syufb" path="res://Cams/Images/Background (Temp)/Varius1.png" id="8_pa255"]
+[ext_resource type="Texture2D" uid="uid://cyd3ta6t57gon" path="res://Cams/Images/UI/Cam Buttons/03.png" id="8_wk6tt"]
+[ext_resource type="Texture2D" uid="uid://bbv628amie1v2" path="res://Cams/Images/Background (Temp)/Lambda2.png" id="9_weuba"]
+[ext_resource type="Texture2D" uid="uid://b317msaefp76h" path="res://Cams/Images/Background (Temp)/StaffRoom1.png" id="10_lfbti"]
+[ext_resource type="Texture2D" uid="uid://b35yuudyjuwsb" path="res://Cams/Images/Background (Temp)/StaffRoom2.png" id="11_2guf8"]
+[ext_resource type="Texture2D" uid="uid://2jjdg8ayptdi" path="res://Cams/Images/UI/Cam Buttons/04_on.png" id="11_yfld8"]
+[ext_resource type="Texture2D" uid="uid://drox2n8txdqxb" path="res://Cams/Images/Background (Temp)/StaffRoom3.png" id="12_aaxlh"]
+[ext_resource type="Texture2D" uid="uid://dtqc56ucn6c86" path="res://Cams/Images/UI/Cam Buttons/04.png" id="12_wnynw"]
+[ext_resource type="Texture2D" uid="uid://bwpaepr6skqbu" path="res://Cams/Images/Background (Temp)/FoodCourt.png" id="13_7qbcf"]
+[ext_resource type="Texture2D" uid="uid://cbribw3v7kxae" path="res://Cams/Images/UI/Cam Buttons/05_on.png" id="13_rdww1"]
+[ext_resource type="Texture2D" uid="uid://2kkiki7322nj" path="res://Cams/Images/UI/Cam Buttons/05.png" id="14_js4nj"]
+[ext_resource type="Texture2D" uid="uid://c3rwcx8f1wnn3" path="res://Cams/Images/Blip/blip_1.png" id="14_lfbti"]
+[ext_resource type="Texture2D" uid="uid://yceg15oojddg" path="res://Cams/Images/Blip/blip_2.png" id="15_2guf8"]
+[ext_resource type="Texture2D" uid="uid://xg0ibq1hqsg" path="res://Cams/Images/UI/Cam Buttons/06_on.png" id="15_hslvy"]
+[ext_resource type="Texture2D" uid="uid://dpebesg4bcncq" path="res://Cams/Images/Blip/blip_3.png" id="16_aaxlh"]
+[ext_resource type="Texture2D" uid="uid://ces1wbytdbhtw" path="res://Cams/Images/UI/Cam Buttons/06.png" id="16_dypwj"]
+[ext_resource type="Texture2D" uid="uid://bapv6l4rto4pn" path="res://Cams/Images/Blip/blip_4.png" id="17_7qbcf"]
+[ext_resource type="Texture2D" uid="uid://bs56leho6voqt" path="res://Cams/Images/UI/Cam Buttons/07_on.png" id="17_rvdwq"]
+[ext_resource type="Texture2D" uid="uid://doua70vle86vd" path="res://Cams/Images/UI/Cam Buttons/07.png" id="18_5hvww"]
+[ext_resource type="Texture2D" uid="uid://c3ffkyw82kvfs" path="res://Cams/Images/Blip/blip_5.png" id="18_vcgjs"]
+[ext_resource type="AudioStream" uid="uid://x0w71l52mm1b" path="res://Main Menu/Audio/switch_noise.wav" id="19_ormbs"]
+[ext_resource type="Texture2D" uid="uid://dc8r3v0ywajxx" path="res://Cams/Images/UI/Cam Buttons/08_on.png" id="19_pol2u"]
+[ext_resource type="Texture2D" uid="uid://3vfgsjt8axod" path="res://Cams/Images/UI/Cam Buttons/08.png" id="20_8gpci"]
+[ext_resource type="Texture2D" uid="uid://w7ibof260dev" path="res://Cams/Images/UI/Cam Buttons/09_on.png" id="21_4amts"]
+[ext_resource type="Texture2D" uid="uid://3rgqc3ui0urh" path="res://Cams/Images/UI/Cam Buttons/09.png" id="22_330nl"]
+[ext_resource type="Texture2D" uid="uid://buy2lkudljbwv" path="res://Cams/Images/UI/Cam Buttons/10_on.png" id="23_dssf3"]
+[ext_resource type="Texture2D" uid="uid://c5qtb766bryd8" path="res://Cams/Images/UI/Cam Buttons/10.png" id="24_8fuei"]
+[ext_resource type="Texture2D" uid="uid://c0glct0atx7y5" path="res://Cams/Images/UI/Cam Buttons/11_on.png" id="25_pa255"]
+[ext_resource type="Texture2D" uid="uid://dsparoca8bfej" path="res://Cams/Images/UI/Cam Buttons/11.png" id="26_weuba"]
+[ext_resource type="Texture2D" uid="uid://d24nirctj46cd" path="res://Cams/Images/UI/Cam Buttons/12_on.png" id="27_lfbti"]
+[ext_resource type="Texture2D" uid="uid://260orwujxqm7" path="res://Cams/Images/UI/Cam Buttons/12.png" id="28_2guf8"]
+[ext_resource type="Texture2D" uid="uid://bapxfub34yars" path="res://Cams/Images/UI/Cam Buttons/13_on.png" id="29_aaxlh"]
+[ext_resource type="Texture2D" uid="uid://b5v6e5el7pjk3" path="res://Cams/Images/UI/Cam Buttons/13.png" id="30_7qbcf"]
+[ext_resource type="Texture2D" uid="uid://c01m31qtrp4yy" path="res://Cams/Images/Marley (Temp)/Theta1.png" id="47_bob4f"]
+[ext_resource type="Texture2D" uid="uid://dmm4scchw2bop" path="res://Cams/Images/Marley (Temp)/Phi1.png" id="48_v8hm5"]
+[ext_resource type="Texture2D" uid="uid://b0h1wspw8sral" path="res://Cams/Images/Marley (Temp)/Elevator.png" id="49_ormbs"]
+[ext_resource type="Texture2D" uid="uid://b8sksng3y3nyd" path="res://Cams/Images/Marley (Temp)/Varius1.png" id="50_i7g0t"]
+[ext_resource type="Script" uid="uid://crflvirh3jbem" path="res://Cams/Scripts/Characters/marley.gd" id="51_rqggm"]
+[ext_resource type="Script" uid="uid://dqltqwcu3eb73" path="res://Cams/Scripts/Characters/kacey.gd" id="52_v8hm5"]
+[ext_resource type="Texture2D" uid="uid://dy233e7wruane" path="res://Cams/Images/UI/Cam Opener.png" id="54_i7g0t"]
+[ext_resource type="Script" uid="uid://q86k7kcdv43f" path="res://Cams/Scripts/camsecrets.gd" id="56_jk08t"]
+[ext_resource type="Texture2D" uid="uid://hmydk74u1cmp" path="res://Cams/Images/Secrets/Cam UI/Cheater1.png" id="58_dyhum"]
+[ext_resource type="Texture2D" uid="uid://dg2uovjrfqgab" path="res://Cams/Images/Secrets/Cam UI/Cheater2.png" id="59_mt8ri"]
+[ext_resource type="Texture2D" uid="uid://d21wvofqvdvx3" path="res://Cams/Images/Secrets/Cam UI/Default1.png" id="60_t56yk"]
+[ext_resource type="Texture2D" uid="uid://cnyskmx45qlgl" path="res://Cams/Images/Secrets/Cam UI/Default2.png" id="61_wftx0"]
+[ext_resource type="Texture2D" uid="uid://dgydvfsnahh27" path="res://Cams/Images/Secrets/Cam UI/Prisoner1.png" id="62_vofjk"]
+[ext_resource type="Texture2D" uid="uid://dlkap8fbrfmtt" path="res://Cams/Images/Secrets/Cam UI/Prisoner2.png" id="63_qnvhd"]
+[ext_resource type="Texture2D" uid="uid://blpxufbolu4lt" path="res://Cams/Images/Secrets/Cam UI/Skulduggery1.png" id="64_trppv"]
+[ext_resource type="Texture2D" uid="uid://batq8kfhjitsl" path="res://Cams/Images/Secrets/Cam UI/Skulduggery2.png" id="65_ogd4n"]
+[ext_resource type="Texture2D" uid="uid://diritojblha67" path="res://Cams/Images/Secrets/Cam UI/IvoryWraith1.png" id="66_8maso"]
+[ext_resource type="Texture2D" uid="uid://btp0bvqgvo7fv" path="res://Cams/Images/Secrets/Cam UI/IvoryWraith2.png" id="67_hqtgw"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8ty1q"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_bxa3e")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": 1,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_b6ka2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_330nl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_dssf3")
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_8fuei")
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_pa255")
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_weuba")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_lfbti")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_2guf8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_aaxlh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_7qbcf")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 0.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5gdop"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_lfbti")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_2guf8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_aaxlh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_7qbcf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_vcgjs")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": 0,
+"name": &"default",
+"speed": 24.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8ty1q"]
+size = Vector2(620, 70)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_84p6c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_0mfw7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_lsrdn")
+}],
+"loop": 1,
+"name": &"flash",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_lsrdn")
+}],
+"loop": 0,
+"name": &"off",
+"speed": 1.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hb6b0"]
+size = Vector2(60, 44)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p0nlo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_rbefo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_bxa3e")
+}],
+"loop": 1,
+"name": &"flash",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_bxa3e")
+}],
+"loop": 0,
+"name": &"off",
+"speed": 1.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hb6b0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_g4s42")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_wk6tt")
+}],
+"loop": 1,
+"name": &"flash",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_wk6tt")
+}],
+"loop": 0,
+"name": &"off",
+"speed": 1.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vcgjs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_yfld8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_wnynw")
+}],
+"loop": 1,
+"name": &"flash",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_wnynw")
+}],
+"loop": 0,
+"name": &"off",
+"speed": 1.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bob4f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_rdww1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_js4nj")
+}],
+"loop": 1,
+"name": &"flash",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_js4nj")
+}],
+"loop": 0,
+"name": &"off",
+"speed": 1.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v8hm5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_hslvy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_dypwj")
+}],
+"loop": 1,
+"name": &"flash",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_dypwj")
+}],
+"loop": 0,
+"name": &"off",
+"speed": 1.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ormbs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_rvdwq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_5hvww")
+}],
+"loop": 1,
+"name": &"flash",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_5hvww")
+}],
+"loop": 0,
+"name": &"off",
+"speed": 1.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_i7g0t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_pol2u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_8gpci")
+}],
+"loop": 1,
+"name": &"flash",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_8gpci")
+}],
+"loop": 0,
+"name": &"off",
+"speed": 1.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rqggm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_4amts")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_330nl")
+}],
+"loop": 1,
+"name": &"flash",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_330nl")
+}],
+"loop": 0,
+"name": &"off",
+"speed": 1.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jk08t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_dssf3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_8fuei")
+}],
+"loop": 1,
+"name": &"flash",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_8fuei")
+}],
+"loop": 0,
+"name": &"off",
+"speed": 1.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tmn3s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_pa255")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_weuba")
+}],
+"loop": 1,
+"name": &"flash",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_weuba")
+}],
+"loop": 0,
+"name": &"off",
+"speed": 1.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pp56l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("27_lfbti")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_2guf8")
+}],
+"loop": 1,
+"name": &"flash",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("28_2guf8")
+}],
+"loop": 0,
+"name": &"off",
+"speed": 1.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cfcyd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("29_aaxlh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_7qbcf")
+}],
+"loop": 1,
+"name": &"flash",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("30_7qbcf")
+}],
+"loop": 0,
+"name": &"off",
+"speed": 1.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8qrl2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("49_ormbs")
+}],
+"loop": 0,
+"name": &"CAM_01",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("47_bob4f")
+}],
+"loop": 0,
+"name": &"CAM_02",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("48_v8hm5")
+}],
+"loop": 0,
+"name": &"CAM_04",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("50_i7g0t")
+}],
+"loop": 0,
+"name": &"CAM_06",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": null
+}],
+"loop": 0,
+"name": &"CAM_10",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": null
+}],
+"loop": 0,
+"name": &"CAM_11",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": null
+}],
+"loop": 0,
+"name": &"RightDoor",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": null
+}],
+"loop": 0,
+"name": &"Void",
+"speed": 1.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tfqo5"]
+animations = [{
+"frames": [],
+"loop": 1,
+"name": &"Stage 1",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"Stage 2",
+"speed": 8.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"Stage 3",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"Stage 4",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"Stage 5",
+"speed": 5.0
+}]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_626b8"]
+load_path = "res://.godot/imported/Irisu.png-116a717bf0251bda602e6af96a17142d.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qnrhd"]
+load_path = "res://.godot/imported/Umbrella Man.png-27cfb0292a922ecf6da2c9cbcb22438a.ctex"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gm2vc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("58_dyhum")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_mt8ri")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rhrr3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("60_t56yk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_wftx0")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_klfyd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("62_vofjk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_qnvhd")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kd8e3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("64_trppv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_ogd4n")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6g08w"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("66_8maso")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_hqtgw")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 1.0
+}]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=518804758]
+script = ExtResource("1_rqggm")
+
+[node name="Base Stuff" type="Control" parent="." unique_id=181082114]
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 2
+
+[node name="Cam Outline" type="TextureRect" parent="Base Stuff" unique_id=1795567399]
+z_index = 5
+texture_filter = 1
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+texture = ExtResource("1_sbhhj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Map" type="TextureRect" parent="Base Stuff" unique_id=150677658]
+z_index = 5
+texture_filter = 1
+layout_mode = 0
+offset_left = 1496.0
+offset_top = 656.0
+offset_right = 1601.0
+offset_bottom = 761.0
+scale = Vector2(4, 4)
+mouse_filter = 2
+texture = ExtResource("2_4cmfn")
+metadata/_edit_use_anchors_ = true
+
+[node name="FeedText" type="Label" parent="Base Stuff" unique_id=1865324448]
+z_index = 5
+texture_filter = 1
+layout_mode = 0
+offset_left = 117.0
+offset_top = 47.0
+offset_right = 405.0
+offset_bottom = 95.0
+theme_override_fonts/font = ExtResource("3_rbefo")
+theme_override_font_sizes/font_size = 48
+text = "Live Feed"
+metadata/_edit_use_anchors_ = true
+
+[node name="FeedCircle" type="AnimatedSprite2D" parent="Base Stuff" unique_id=1719073655]
+z_index = 5
+texture_filter = 1
+position = Vector2(55, 42)
+sprite_frames = SubResource("SpriteFrames_8ty1q")
+autoplay = "default"
+centered = false
+
+[node name="CamNumberText" type="Label" parent="Base Stuff" unique_id=252459482]
+z_index = 5
+texture_filter = 1
+layout_mode = 0
+offset_left = 44.0
+offset_top = 1008.0
+offset_right = 236.0
+offset_bottom = 1056.0
+theme_override_fonts/font = ExtResource("3_rbefo")
+theme_override_font_sizes/font_size = 48
+text = "CAM_01"
+metadata/_edit_use_anchors_ = true
+
+[node name="CamIDText" type="Label" parent="Base Stuff" unique_id=1144051329]
+z_index = 5
+texture_filter = 1
+layout_mode = 0
+offset_left = 36.0
+offset_top = 956.0
+offset_right = 420.0
+offset_bottom = 1004.0
+theme_override_fonts/font = ExtResource("3_rbefo")
+theme_override_font_sizes/font_size = 48
+text = "ID: Elevator"
+metadata/_edit_use_anchors_ = true
+
+[node name="Background" type="AnimatedSprite2D" parent="Base Stuff" unique_id=451087901]
+z_index = 1
+sprite_frames = SubResource("SpriteFrames_b6ka2")
+centered = false
+
+[node name="Blip" type="AnimatedSprite2D" parent="Base Stuff" unique_id=1427649172]
+z_index = 4
+sprite_frames = SubResource("SpriteFrames_5gdop")
+autoplay = "default"
+centered = false
+
+[node name="Blip Audio" type="AudioStreamPlayer" parent="Base Stuff" unique_id=857503980]
+stream = ExtResource("19_ormbs")
+
+[node name="Close Button" type="Sprite2D" parent="Base Stuff" unique_id=1597166185]
+z_index = 5
+position = Vector2(960, 1040)
+texture = ExtResource("54_i7g0t")
+
+[node name="Area2D" type="Area2D" parent="Base Stuff/Close Button" unique_id=1005088025]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Base Stuff/Close Button/Area2D" unique_id=1853878176]
+shape = SubResource("RectangleShape2D_8ty1q")
+
+[node name="Map Buttons" type="Control" parent="." unique_id=525760420 node_paths=PackedStringArray("cam_number_label", "cam_room_label", "background_sprite", "characters_node", "static_blip_animation", "camera_switch_audio")]
+z_index = 1
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+script = ExtResource("5_rdww1")
+cam_number_label = NodePath("../Base Stuff/CamNumberText")
+cam_room_label = NodePath("../Base Stuff/CamIDText")
+background_sprite = NodePath("../Base Stuff/Background")
+characters_node = NodePath("../Characters")
+static_blip_animation = NodePath("../Base Stuff/Blip")
+camera_switch_audio = NodePath("../Base Stuff/Blip Audio")
+metadata/_edit_use_anchors_ = true
+
+[node name="Cam01" type="AnimatedSprite2D" parent="Map Buttons" unique_id=504202723]
+z_index = 10
+texture_filter = 1
+position = Vector2(1554, 874)
+sprite_frames = SubResource("SpriteFrames_84p6c")
+animation = &"flash"
+autoplay = "flash"
+
+[node name="Area2D" type="Area2D" parent="Map Buttons/Cam01" unique_id=1169016993]
+script = ExtResource("7_wnynw")
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Map Buttons/Cam01/Area2D" unique_id=1743041267]
+shape = SubResource("RectangleShape2D_hb6b0")
+metadata/_edit_lock_ = true
+
+[node name="Cam02" type="AnimatedSprite2D" parent="Map Buttons" unique_id=937245027]
+z_index = 10
+texture_filter = 1
+position = Vector2(1614, 954)
+sprite_frames = SubResource("SpriteFrames_p0nlo")
+animation = &"off"
+
+[node name="Area2D" type="Area2D" parent="Map Buttons/Cam02" unique_id=622739238]
+script = ExtResource("7_wnynw")
+cam_id = "CAM_02"
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Map Buttons/Cam02/Area2D" unique_id=399485190]
+shape = SubResource("RectangleShape2D_hb6b0")
+metadata/_edit_lock_ = true
+
+[node name="Cam03" type="AnimatedSprite2D" parent="Map Buttons" unique_id=261474437]
+z_index = 10
+texture_filter = 1
+position = Vector2(1656, 1054)
+sprite_frames = SubResource("SpriteFrames_hb6b0")
+animation = &"off"
+
+[node name="Area2D" type="Area2D" parent="Map Buttons/Cam03" unique_id=696319050]
+script = ExtResource("7_wnynw")
+cam_id = "CAM_03"
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Map Buttons/Cam03/Area2D" unique_id=1710322867]
+shape = SubResource("RectangleShape2D_hb6b0")
+metadata/_edit_lock_ = true
+
+[node name="Cam04" type="AnimatedSprite2D" parent="Map Buttons" unique_id=316906672]
+z_index = 10
+texture_filter = 1
+position = Vector2(1662, 902)
+sprite_frames = SubResource("SpriteFrames_vcgjs")
+animation = &"off"
+
+[node name="Area2D" type="Area2D" parent="Map Buttons/Cam04" unique_id=490951272]
+script = ExtResource("7_wnynw")
+cam_id = "CAM_04"
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Map Buttons/Cam04/Area2D" unique_id=1304835938]
+shape = SubResource("RectangleShape2D_hb6b0")
+metadata/_edit_lock_ = true
+
+[node name="Cam05" type="AnimatedSprite2D" parent="Map Buttons" unique_id=39311282]
+z_index = 10
+texture_filter = 1
+position = Vector2(1738, 866)
+sprite_frames = SubResource("SpriteFrames_bob4f")
+animation = &"off"
+
+[node name="Area2D" type="Area2D" parent="Map Buttons/Cam05" unique_id=1084385747]
+script = ExtResource("7_wnynw")
+cam_id = "CAM_05"
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Map Buttons/Cam05/Area2D" unique_id=1851808621]
+shape = SubResource("RectangleShape2D_hb6b0")
+metadata/_edit_lock_ = true
+
+[node name="Cam06" type="AnimatedSprite2D" parent="Map Buttons" unique_id=1324189522]
+z_index = 10
+texture_filter = 1
+position = Vector2(1610, 778)
+sprite_frames = SubResource("SpriteFrames_v8hm5")
+animation = &"off"
+
+[node name="Area2D" type="Area2D" parent="Map Buttons/Cam06" unique_id=1812168769]
+script = ExtResource("7_wnynw")
+cam_id = "CAM_06"
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Map Buttons/Cam06/Area2D" unique_id=1180599385]
+shape = SubResource("RectangleShape2D_hb6b0")
+metadata/_edit_lock_ = true
+
+[node name="Cam07" type="AnimatedSprite2D" parent="Map Buttons" unique_id=1715722725]
+z_index = 10
+texture_filter = 1
+position = Vector2(1714, 814)
+sprite_frames = SubResource("SpriteFrames_ormbs")
+animation = &"off"
+
+[node name="Area2D" type="Area2D" parent="Map Buttons/Cam07" unique_id=1035799445]
+script = ExtResource("7_wnynw")
+cam_id = "CAM_07"
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Map Buttons/Cam07/Area2D" unique_id=1739324791]
+shape = SubResource("RectangleShape2D_hb6b0")
+metadata/_edit_lock_ = true
+
+[node name="Cam08" type="AnimatedSprite2D" parent="Map Buttons" unique_id=980310211]
+z_index = 10
+texture_filter = 1
+position = Vector2(1874, 758)
+sprite_frames = SubResource("SpriteFrames_i7g0t")
+animation = &"off"
+
+[node name="Area2D" type="Area2D" parent="Map Buttons/Cam08" unique_id=432316092]
+script = ExtResource("7_wnynw")
+cam_id = "CAM_08"
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Map Buttons/Cam08/Area2D" unique_id=1360291276]
+shape = SubResource("RectangleShape2D_hb6b0")
+metadata/_edit_lock_ = true
+
+[node name="Cam09" type="AnimatedSprite2D" parent="Map Buttons" unique_id=523707728]
+z_index = 10
+texture_filter = 1
+position = Vector2(1834, 990)
+sprite_frames = SubResource("SpriteFrames_rqggm")
+animation = &"off"
+
+[node name="Area2D" type="Area2D" parent="Map Buttons/Cam09" unique_id=151493384]
+script = ExtResource("7_wnynw")
+cam_id = "CAM_09"
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Map Buttons/Cam09/Area2D" unique_id=1219720839]
+shape = SubResource("RectangleShape2D_hb6b0")
+metadata/_edit_lock_ = true
+
+[node name="Cam10" type="AnimatedSprite2D" parent="Map Buttons" unique_id=421499694]
+z_index = 10
+texture_filter = 1
+position = Vector2(1542, 734)
+sprite_frames = SubResource("SpriteFrames_jk08t")
+animation = &"off"
+
+[node name="Area2D" type="Area2D" parent="Map Buttons/Cam10" unique_id=1024767365]
+script = ExtResource("7_wnynw")
+cam_id = "CAM_10"
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Map Buttons/Cam10/Area2D" unique_id=24261644]
+shape = SubResource("RectangleShape2D_hb6b0")
+metadata/_edit_lock_ = true
+
+[node name="Cam11" type="AnimatedSprite2D" parent="Map Buttons" unique_id=580574904]
+z_index = 10
+texture_filter = 1
+position = Vector2(1650, 666)
+sprite_frames = SubResource("SpriteFrames_tmn3s")
+animation = &"off"
+
+[node name="Area2D" type="Area2D" parent="Map Buttons/Cam11" unique_id=683936165]
+script = ExtResource("7_wnynw")
+cam_id = "CAM_11"
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Map Buttons/Cam11/Area2D" unique_id=1388534848]
+shape = SubResource("RectangleShape2D_hb6b0")
+metadata/_edit_lock_ = true
+
+[node name="Cam12" type="AnimatedSprite2D" parent="Map Buttons" unique_id=381179337]
+z_index = 10
+texture_filter = 1
+position = Vector2(1834, 666)
+sprite_frames = SubResource("SpriteFrames_pp56l")
+animation = &"off"
+
+[node name="Area2D" type="Area2D" parent="Map Buttons/Cam12" unique_id=1258003710]
+script = ExtResource("7_wnynw")
+cam_id = "CAM_12"
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Map Buttons/Cam12/Area2D" unique_id=2094271339]
+shape = SubResource("RectangleShape2D_hb6b0")
+metadata/_edit_lock_ = true
+
+[node name="Cam13" type="AnimatedSprite2D" parent="Map Buttons" unique_id=341568960]
+z_index = 10
+texture_filter = 1
+position = Vector2(1886, 930)
+sprite_frames = SubResource("SpriteFrames_cfcyd")
+animation = &"off"
+
+[node name="Area2D" type="Area2D" parent="Map Buttons/Cam13" unique_id=970955281]
+script = ExtResource("7_wnynw")
+cam_id = "CAM_13"
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Map Buttons/Cam13/Area2D" unique_id=751530354]
+shape = SubResource("RectangleShape2D_hb6b0")
+metadata/_edit_lock_ = true
+
+[node name="Characters" type="Node2D" parent="." unique_id=2932207]
+
+[node name="Marley" type="AnimatedSprite2D" parent="Characters" unique_id=1551386708]
+z_index = 3
+sprite_frames = SubResource("SpriteFrames_8qrl2")
+animation = &"Void"
+centered = false
+script = ExtResource("51_rqggm")
+
+[node name="Kacey" type="AnimatedSprite2D" parent="Characters" unique_id=831384177]
+z_index = 3
+sprite_frames = SubResource("SpriteFrames_tfqo5")
+animation = &"Stage 1"
+script = ExtResource("52_v8hm5")
+
+[node name="Secrets (Cams)" type="Node2D" parent="." unique_id=1890224437]
+script = ExtResource("56_jk08t")
+
+[node name="Irisu" type="Sprite2D" parent="Secrets (Cams)" unique_id=1294922740]
+visible = false
+z_index = 1
+texture = SubResource("CompressedTexture2D_626b8")
+centered = false
+
+[node name="Umbrella Man" type="Sprite2D" parent="Secrets (Cams)" unique_id=1789336210]
+visible = false
+z_index = 1
+texture = SubResource("CompressedTexture2D_qnrhd")
+centered = false
+
+[node name="Secrets (UI)" type="Node2D" parent="." unique_id=1390750303]
+
+[node name="Cheater" type="AnimatedSprite2D" parent="Secrets (UI)" unique_id=1146252060]
+visible = false
+z_index = 4
+texture_filter = 1
+position = Vector2(105, 855)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_gm2vc")
+frame_progress = 0.82411295
+
+[node name="Default" type="AnimatedSprite2D" parent="Secrets (UI)" unique_id=427646777]
+visible = false
+z_index = 4
+texture_filter = 1
+position = Vector2(105, 855)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_rhrr3")
+
+[node name="Prisoner" type="AnimatedSprite2D" parent="Secrets (UI)" unique_id=161951366]
+visible = false
+z_index = 4
+texture_filter = 1
+position = Vector2(105, 855)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_klfyd")
+
+[node name="Skulduggery" type="AnimatedSprite2D" parent="Secrets (UI)" unique_id=1890110618]
+visible = false
+z_index = 4
+texture_filter = 1
+position = Vector2(105, 855)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_kd8e3")
+
+[node name="Ivory Wraith" type="AnimatedSprite2D" parent="Secrets (UI)" unique_id=1446626449]
+visible = false
+z_index = 4
+texture_filter = 1
+position = Vector2(105, 855)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_6g08w")

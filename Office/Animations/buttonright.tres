@@ -1,0 +1,18 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://bwg4uey1qw66"]
+
+[ext_resource type="Texture2D" uid="uid://bb2kcntdds2pu" path="res://Office/Images/Door Stuff/ButtonRight.png" id="1_odcht"]
+[ext_resource type="Texture2D" uid="uid://ds7e330iu4gdv" path="res://Office/Images/Door Stuff/ButtonRightPressed.png" id="2_gm0jp"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_odcht")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_gm0jp")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]

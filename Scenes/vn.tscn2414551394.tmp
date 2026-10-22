@@ -1,0 +1,128 @@
+[gd_scene format=3 uid="uid://b28kwqg1w03lc"]
+
+[ext_resource type="Texture2D" uid="uid://cuf3ekcs085vs" path="res://VN/Images/pillarboxes.png" id="1_dakk3"]
+[ext_resource type="Script" uid="uid://lsgj6mvewtvl" path="res://VN/Scripts/add_to_test.gd" id="1_rijj1"]
+[ext_resource type="Texture2D" uid="uid://d1co3073x80kp" path="res://VN/Images/reference frame.png" id="2_p6crs"]
+[ext_resource type="Texture2D" uid="uid://db0b1ln7si8dd" path="res://VN/Images/akisa.png" id="2_y81u3"]
+[ext_resource type="FontFile" uid="uid://b3ete1ortqtqf" path="res://Fonts/Pixel.ttf" id="5_w5oaq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hb6b0"]
+size = Vector2(147, 23)
+
+[node name="Node2D" type="Node2D" unique_id=708635078]
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=1842360311]
+offset_right = 1920.0
+offset_bottom = 1080.0
+stretch = true
+
+[node name="EVERYTHING GOES UNDER HERE" type="SubViewport" parent="SubViewportContainer" unique_id=990867055 node_paths=PackedStringArray("text", "author", "question", "options")]
+handle_input_locally = false
+size = Vector2i(1920, 1080)
+size_2d_override = Vector2i(854, 480)
+size_2d_override_stretch = true
+render_target_update_mode = 4
+script = ExtResource("1_rijj1")
+text = NodePath("RichTextLabel")
+author = NodePath("Label3")
+question = NodePath("Label2")
+options = [null]
+
+[node name="Pillarboxes" type="Sprite2D" parent="SubViewportContainer/EVERYTHING GOES UNDER HERE" unique_id=1253432140]
+z_index = 128
+texture_filter = 1
+texture = ExtResource("1_dakk3")
+centered = false
+
+[node name="Frame (Temp)" type="Sprite2D" parent="SubViewportContainer/EVERYTHING GOES UNDER HERE" unique_id=716410546]
+z_index = 120
+texture_filter = 1
+position = Vector2(426.66562, 240.11111)
+texture = ExtResource("2_p6crs")
+
+[node name="Characters" type="Node" parent="SubViewportContainer/EVERYTHING GOES UNDER HERE" unique_id=1292313495]
+
+[node name="Akisa" type="Sprite2D" parent="SubViewportContainer/EVERYTHING GOES UNDER HERE/Characters" unique_id=290894527]
+texture_filter = 1
+position = Vector2(523.075, 204.55556)
+texture = ExtResource("2_y81u3")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="SubViewportContainer/EVERYTHING GOES UNDER HERE" unique_id=1546351619]
+z_index = 121
+texture_filter = 3
+offset_left = 186.0
+offset_top = 368.0
+offset_right = 666.0
+offset_bottom = 434.22223
+theme_override_fonts/normal_font = ExtResource("5_w5oaq")
+scroll_active = false
+
+[node name="Label2" type="Label" parent="SubViewportContainer/EVERYTHING GOES UNDER HERE" unique_id=1863367488]
+z_index = 121
+texture_filter = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -1.7791748
+offset_top = -152.88889
+offset_right = 239.74268
+offset_bottom = -128.11111
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("5_w5oaq")
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="Label3" type="Label" parent="SubViewportContainer/EVERYTHING GOES UNDER HERE" unique_id=1038478033]
+z_index = 121
+texture_filter = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -240.187
+offset_top = -152.88889
+offset_right = 1.3348389
+offset_bottom = -128.11111
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("5_w5oaq")
+vertical_alignment = 2
+
+[node name="Control" type="Control" parent="SubViewportContainer/EVERYTHING GOES UNDER HERE" unique_id=1942990807]
+z_index = 121
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Option 1" type="Label" parent="SubViewportContainer/EVERYTHING GOES UNDER HERE/Control" unique_id=1124916548]
+layout_mode = 0
+offset_left = 182.0
+offset_top = 375.0
+offset_right = 328.99997
+offset_bottom = 398.0
+
+[node name="Area2D" type="Area2D" parent="SubViewportContainer/EVERYTHING GOES UNDER HERE/Control/Option 1" unique_id=646156931]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SubViewportContainer/EVERYTHING GOES UNDER HERE/Control/Option 1/Area2D" unique_id=408438502]
+position = Vector2(73.5, 12)
+shape = SubResource("RectangleShape2D_hb6b0")
+
+[node name="Option 2" type="Label" parent="SubViewportContainer/EVERYTHING GOES UNDER HERE/Control" unique_id=1530088210]
+layout_mode = 0
+offset_left = 331.0
+offset_top = 375.0
+offset_right = 477.99997
+offset_bottom = 398.0
+
+[node name="Area2D" type="Area2D" parent="SubViewportContainer/EVERYTHING GOES UNDER HERE/Control/Option 2" unique_id=312430629]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SubViewportContainer/EVERYTHING GOES UNDER HERE/Control/Option 2/Area2D" unique_id=507252118]
+position = Vector2(73.5, 12)
+shape = SubResource("RectangleShape2D_hb6b0")

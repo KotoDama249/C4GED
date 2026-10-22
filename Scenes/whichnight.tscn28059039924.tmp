@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://6x7sjg8g1wd3"]
+
+[ext_resource type="SpriteFrames" uid="uid://j8brqjfpu0ei" path="res://Which Night/Animations/loading.tres" id="1_1c0ig"]
+[ext_resource type="Script" uid="uid://bcfdk4tiftoug" path="res://Which Night/Scripts/nightscreen.gd" id="1_n5y7u"]
+[ext_resource type="SpriteFrames" uid="uid://ba54sulvquxru" path="res://Which Night/Animations/blip.tres" id="2_n5y7u"]
+[ext_resource type="FontFile" uid="uid://4wbu7mfe60rv" path="res://Fonts/AzukiFont.ttf" id="4_c63bc"]
+
+[node name="Node2D" type="Node2D" unique_id=1968135911]
+script = ExtResource("1_n5y7u")
+
+[node name="Background" type="AnimatedSprite2D" parent="." unique_id=1784358640]
+sprite_frames = ExtResource("1_1c0ig")
+autoplay = "default"
+frame_progress = 0.98790073
+centered = false
+
+[node name="Blip" type="AnimatedSprite2D" parent="." unique_id=766041304]
+sprite_frames = ExtResource("2_n5y7u")
+autoplay = "default"
+frame = 11
+frame_progress = 1.0
+centered = false
+
+[node name="Label" type="Label" parent="." unique_id=1697862188]
+texture_filter = 1
+offset_left = 810.0
+offset_top = 465.0
+offset_right = 1110.0
+offset_bottom = 615.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_c63bc")
+theme_override_font_sizes/font_size = 32
+text = "12:00 AM
+Night One"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Timer" type="Timer" parent="." unique_id=1561564976]
+wait_time = 3.0
+autostart = true

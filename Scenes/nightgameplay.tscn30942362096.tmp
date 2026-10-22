@@ -1,0 +1,306 @@
+[gd_scene format=3 uid="uid://jtid8iglcep4"]
+
+[ext_resource type="Texture2D" uid="uid://d1xtlmf8ghgnf" path="res://Office/Images/OfficeTest.jpg" id="1_h75ql"]
+[ext_resource type="Texture2D" uid="uid://dtcokiew5jnbd" path="res://Office/Images/Desk.png" id="2_k5ydy"]
+[ext_resource type="Texture2D" uid="uid://dgr1exy1uwpuc" path="res://Office/Images/Aka Figure.png" id="3_lako1"]
+[ext_resource type="Script" uid="uid://s7lnnoq2olre" path="res://Office/Scripts/secretnoise.gd" id="4_gb5x8"]
+[ext_resource type="Script" uid="uid://cqb6lkk712d87" path="res://Office/Scripts/pan_screen.gd" id="4_k5ydy"]
+[ext_resource type="AudioStream" uid="uid://dfv3wfoeiw6vg" path="res://Office/Sounds/title_call_aka.ogg" id="4_lako1"]
+[ext_resource type="Texture2D" uid="uid://c6128d0j5r3j0" path="res://Office/Images/Door Stuff/Door Darkness.png" id="7_tyc8n"]
+[ext_resource type="Texture2D" uid="uid://bp3afeno41l22" path="res://Office/Images/Door Stuff/Door Frames.png" id="8_l3qqe"]
+[ext_resource type="Texture2D" uid="uid://d3cd8s0uadsn7" path="res://Office/Images/Door Stuff/ButtonLeft.png" id="9_ne4w2"]
+[ext_resource type="Texture2D" uid="uid://5ytqmck1xncr" path="res://Office/Images/Door Stuff/ButtonLeftPressed.png" id="10_eokfs"]
+[ext_resource type="Script" uid="uid://solx2iphyh2g" path="res://Office/Scripts/doorbutton.gd" id="11_l3qqe"]
+[ext_resource type="Texture2D" uid="uid://bb2kcntdds2pu" path="res://Office/Images/Door Stuff/ButtonRight.png" id="11_yv0gj"]
+[ext_resource type="Texture2D" uid="uid://ds7e330iu4gdv" path="res://Office/Images/Door Stuff/ButtonRightPressed.png" id="12_3xjsq"]
+[ext_resource type="Texture2D" uid="uid://b1xtup4bhws5m" path="res://Office/Images/Door Stuff/Door Itself/Door Close 0.png" id="14_4i0vi"]
+[ext_resource type="Texture2D" uid="uid://c1d0qp7ujsl4f" path="res://Office/Images/Door Stuff/Door Itself/Door Close 1.png" id="15_dmkhs"]
+[ext_resource type="Texture2D" uid="uid://cgh8jvygr260s" path="res://Office/Images/Door Stuff/Door Itself/Door Close 2.png" id="16_a3ogs"]
+[ext_resource type="Texture2D" uid="uid://dxdfka5mkjtqg" path="res://Office/Images/Door Stuff/Door Itself/Door Close 3.png" id="17_60eqy"]
+[ext_resource type="Texture2D" uid="uid://5mht7o18ndjt" path="res://Office/Images/Door Stuff/Door Itself/Door Close 4.png" id="18_quf1v"]
+[ext_resource type="Texture2D" uid="uid://wgqpxgjjuguq" path="res://Office/Images/Door Stuff/Door Itself/Door Close 5.png" id="19_3fjrq"]
+[ext_resource type="Texture2D" uid="uid://8scam3586idb" path="res://Office/Images/Door Stuff/Door Itself/Door Close 6.png" id="20_ywfav"]
+[ext_resource type="Texture2D" uid="uid://cjcd7ybhgs4hh" path="res://Office/Images/Door Stuff/Door Itself/Door Close 7.png" id="21_j6xup"]
+[ext_resource type="Texture2D" uid="uid://dxl48v10opj8t" path="res://Office/Images/Door Stuff/Door Itself/Door Close 8.png" id="22_igf75"]
+[ext_resource type="Texture2D" uid="uid://suxmm88tgd7" path="res://Office/Images/Door Stuff/Door Itself/Door Close 9.png" id="23_t80rn"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hb6b0"]
+radius = 54.0
+height = 268.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6b46f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_ne4w2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_eokfs")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hb6b0"]
+size = Vector2(118, 194)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vkic7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_yv0gj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_3xjsq")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4i0vi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_4i0vi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_dmkhs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_a3ogs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_60eqy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_quf1v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_3fjrq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_ywfav")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_j6xup")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_igf75")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_t80rn")
+}],
+"loop": 0,
+"name": &"close",
+"speed": 60.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_t80rn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_igf75")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_j6xup")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_ywfav")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_3fjrq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_quf1v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_60eqy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_a3ogs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_dmkhs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_4i0vi")
+}],
+"loop": 0,
+"name": &"open",
+"speed": 60.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dmkhs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_4i0vi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_dmkhs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_a3ogs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_60eqy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_quf1v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_3fjrq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_ywfav")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_j6xup")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_igf75")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_t80rn")
+}],
+"loop": 0,
+"name": &"close",
+"speed": 60.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_t80rn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_igf75")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_j6xup")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_ywfav")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_3fjrq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_quf1v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_60eqy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_a3ogs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_dmkhs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_4i0vi")
+}],
+"loop": 0,
+"name": &"open",
+"speed": 60.0
+}]
+
+[node name="Node2D" type="Node2D" unique_id=677752185]
+
+[node name="Base Stuff" type="Node" parent="." unique_id=2089458643]
+
+[node name="Camera2D" type="Camera2D" parent="Base Stuff" unique_id=1414814957]
+offset = Vector2(540, 0)
+anchor_mode = 0
+script = ExtResource("4_k5ydy")
+scroll_clamp = 540
+metadata/_edit_lock_ = true
+
+[node name="Office BG Test" type="Sprite2D" parent="Base Stuff" unique_id=707664711]
+texture = ExtResource("1_h75ql")
+centered = false
+metadata/_edit_lock_ = true
+
+[node name="DeskTest" type="Sprite2D" parent="Base Stuff" unique_id=111361579]
+texture = ExtResource("2_k5ydy")
+centered = false
+metadata/_edit_lock_ = true
+
+[node name="Aka Figure" type="Sprite2D" parent="Base Stuff" unique_id=961013012]
+position = Vector2(990, 584)
+texture = ExtResource("3_lako1")
+metadata/_edit_lock_ = true
+
+[node name="Area2D" type="Area2D" parent="Base Stuff/Aka Figure" unique_id=667945930]
+script = ExtResource("4_gb5x8")
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Base Stuff/Aka Figure/Area2D" unique_id=1272944036]
+position = Vector2(-1, -4)
+shape = SubResource("CapsuleShape2D_hb6b0")
+metadata/_edit_lock_ = true
+
+[node name="Figure Audio" type="AudioStreamPlayer" parent="Base Stuff/Aka Figure" unique_id=792037706]
+stream = ExtResource("4_lako1")
+volume_db = -10.0
+
+[node name="Doors" type="Node" parent="." unique_id=846683580]
+
+[node name="Door Darkness" type="Sprite2D" parent="Doors" unique_id=1110964416]
+texture = ExtResource("7_tyc8n")
+centered = false
+metadata/_edit_lock_ = true
+
+[node name="Door Themselves" type="Node" parent="Doors" unique_id=2032681233]
+
+[node name="Door Frames" type="Sprite2D" parent="Doors" unique_id=523465002]
+z_index = 2
+texture = ExtResource("8_l3qqe")
+centered = false
+metadata/_edit_lock_ = true
+
+[node name="ButtonLeft" type="AnimatedSprite2D" parent="Doors" unique_id=1837046958]
+z_index = 128
+position = Vector2(540, 580)
+sprite_frames = SubResource("SpriteFrames_6b46f")
+metadata/_edit_lock_ = true
+
+[node name="Area2D" type="Area2D" parent="Doors/ButtonLeft" unique_id=1252859702 node_paths=PackedStringArray("target_door")]
+script = ExtResource("11_l3qqe")
+target_door = NodePath("../../../DoorLeft")
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Doors/ButtonLeft/Area2D" unique_id=780719829]
+shape = SubResource("RectangleShape2D_hb6b0")
+metadata/_edit_lock_ = true
+
+[node name="ButtonRight" type="AnimatedSprite2D" parent="Doors" unique_id=1062318143]
+z_index = 128
+position = Vector2(2460, 580)
+sprite_frames = SubResource("SpriteFrames_vkic7")
+metadata/_edit_lock_ = true
+
+[node name="Area2D" type="Area2D" parent="Doors/ButtonRight" unique_id=361041478 node_paths=PackedStringArray("target_door")]
+script = ExtResource("11_l3qqe")
+target_door = NodePath("../../../DoorRight")
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Doors/ButtonRight/Area2D" unique_id=70617356]
+shape = SubResource("RectangleShape2D_hb6b0")
+metadata/_edit_lock_ = true
+
+[node name="DoorLeft" type="AnimatedSprite2D" parent="." unique_id=1609414523]
+z_index = 1
+sprite_frames = SubResource("SpriteFrames_4i0vi")
+animation = &"open"
+frame = 9
+centered = false
+
+[node name="DoorRight" type="AnimatedSprite2D" parent="." unique_id=1776046227]
+z_index = 1
+position = Vector2(2485, 0)
+sprite_frames = SubResource("SpriteFrames_dmkhs")
+animation = &"open"
+frame = 9
+centered = false
+flip_h = true
